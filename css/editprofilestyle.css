@@ -1,0 +1,318 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px #FFFFFF;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-weight: 800;
+    font-size: 30px;
+    color: #6076c2;
+}
+
+
+header .sign-up{
+    background: #f09494;
+    border-radius: 50px;
+    padding: 16px 25px 15px 25px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+header .sign-up:hover{
+    background: #6076c2;
+}
+
+header .navbar ul{
+    list-style:none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    left: 250px;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 10px;
+    color:#f09494;
+    font-weight: 700;
+    display: block;
+    margin-left:50px;
+}
+
+header .navbar ul li a:hover{
+    background: #f09494;
+    color: #ffffff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #ffffff;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid #f09494;
+    float: left;
+    left: 0px;
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+.wrap{
+    margin: 0 auto;
+    border: 5px solid #94A3D6;
+    width: 1120px;
+    height: 680px;
+    margin-top: 50px;
+    top: 100px;
+    position: relative;
+}
+
+.wrap h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.leftsect img{
+    width: 140px;
+    height: 140px;
+    margin-left: 100px;
+    background: #807d7d;
+    border-radius: 100px;
+    position: relative;
+    top: 10px;
+}
+
+.leftsect h2{
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    left: 120px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.leftsect a{
+    margin-top: 40px;
+    line-height: 60px;
+    background: #6076c2;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 85px;
+    text-align: center;
+}
+
+.rightsec{
+    float: right;
+    width: 810px;
+    height: 380px;
+    position: relative;
+    bottom: 250px;
+    line-height: 25px;
+}
+
+.form{
+    width: 100%;
+}
+
+.box{
+    padding-bottom: 15px;
+}
+
+label{
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+#about{
+    margin-top: 10px;
+    height: 100px;
+}
+
+input{
+    width: 520px;
+    border: 2px solid black;
+    height: 32px;
+    text-transform: none;
+}
+
+textarea{
+    vertical-align: top;
+    width: 520px;
+    border: 2px solid black;
+    text-transform: none;
+}
+
+#save{
+    position: relative;
+    top: 25px;
+    left: 150px;
+    background: #EDEF7E;
+    color: black;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    font-size: 90%;
+}
+
+.input-1{
+    border:1px solid #01cc40;
+}
+.input-2{
+    background-image: url(../WEB\ proj/icons8-cancel-48.png);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    border:1px solid red;
+}
+
+#popup1{
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 530px;
+    height: 325px;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.groupset{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.groupset button{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 10px;
+    border-radius: 18px;
+    padding: 5px 0 5px;
+    width: 300px;
+    border: transparent;
+}
+
+#popup1 h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#upload{
+    background: #6076c2;
+}
+
+#remove{
+    background: #f09494;
+}
+
+#cancel{
+    background: #EDEF7E;
+    color: black;
+}
+
+#popup1.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.wrapper#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup2{
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 530px;
+    height: 325px;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup2 h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#popup2.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}

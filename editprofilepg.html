@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editprofilestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Edit Profile - SIMAX</title>
+    <script src="../WEB proj/formval.js"></script>
+</head>
+<div class="wrapper" id="blur">
+<body>
+    <header>
+        <a href="file:///D:/PELAJARAN/SMT%203/INTERAKSI%20manusia%20&%20comp/WEB%20proj/simaxproj.html##" class="logo">SIMAX</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOAX +</a>
+                <ul>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">Berita HOAX</a></li>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">Fact Checker</a></li>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">Forum Diskusi</a></li>
+                    <li><a href="file:///D:/PELAJARAN/SMT%203/
+    INTERAKSI%20manusia%20&%20comp/WEB%20proj/
+    communitypg.html#">Community Vote</a></li>
+                </ul>
+                </li>
+                <li><a href="#">NEWS +</a>
+                <ul>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">Seminar</a></li>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">Pelatihan</a></li>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">About OSINT</a></li>
+                    <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">Help</a></li>
+                </ul>
+                </li>
+                <li><a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <a href="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\underconstruction.html" class="sign-up">SIGN UP</a>
+    </header>
+    <div class="wrap">
+        <h1>EDIT PROFILE</h1>
+        <div class="content">
+            <div class="leftsect">
+                <img src="D:\PELAJARAN\SMT 3\INTERAKSI manusia & comp\WEB proj\user2.png" alt="">
+                <h2>Username</h2>
+                <a href="#" onclick="toggle1()">Change Profile Photo</a><br>
+                <a href="#" onclick="toggle2()">Change Banner Photo</a>
+            </div>
+            <div class="rightsec">
+                <form name="formsec" onsubmit="return validateform()">
+                    <div class="box">
+                    <label for="">Full name</label>
+                    <input type="text" name="fn" id="fn">
+                    <div class="error" id="fnerr"></div>
+                    </div>
+                    <div class="box">
+                    <label for="">Username</label>
+                    <input type="text" name="un" id="un">
+                    <div class="error" id="unerr"></div>
+                    </div>
+                    <div class="box">
+                    <label for="">Address</label>
+                    <input type="text" name="addr" id="addr">
+                    <div class="error" id="addrerr"></div>
+                    </div>
+                    <div class="box">
+                    <label for="" id="aboutlab">About me</label>
+                    <textarea name="" id="about" name="about" cols="" rows="3"></textarea>
+                    <div class="error" id="abouterr"></div>
+                    </div>
+                    <div class="box">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email">
+                    <div class="error" id="emailerr"></div>
+                    </div>
+                    <div class="box">
+                    <label for="">Phone Number</label>
+                    <input type="text" id="pn" name="pn" maxlength="13" minlength="10">
+                    <div class="error" id="pnerr"></div>
+                    </div>
+                    <div class="box">
+                        <input type="submit" value="SAVE" id="save">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="poptab1" id="popup1">
+        <h1 id="titletab">Change Profile Photo</h1>
+        <div class="groupset">
+        <button id="upload">Upload Photo</button>
+        <br>
+        <button id="remove">Remove Photo</button>
+        <br>
+        <button id="cancel" onclick="toggle1()">Cancel</button>
+        </div>
+    </div>
+    <div class="poptab2" id="popup2">
+        <h1 id="titletab">Change Banner Photo</h1>
+       <div class="groupset">
+       <button id="upload">Upload Photo</button>
+       <br>
+       <button id="remove">Remove Photo</button>
+       <br>
+       <button id="cancel" onclick="toggle2()">Cancel</button>
+       </div>
+       </div>
+    <script>
+        function toggle1(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup1');
+            popup1.classList.toggle('active');
+        }
+        
+        function toggle2(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup2');
+            popup2.classList.toggle('active');
+        }
+        
+        </script>
+</body>
+</html>

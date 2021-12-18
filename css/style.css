@@ -1,0 +1,117 @@
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+header{
+    background: #FFFFFF;
+    padding: 0 1.25rem;
+}
+
+header .navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .logo{
+    max-width: 32px;
+}
+
+header nav .main-menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .main-menu li{
+    list-style: none;
+}
+
+header nav .main-menu li{
+    list-style: none;
+}
+
+header nav .main-menu li a{
+    padding: 2rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.signbtn{
+    background: #f09494;
+    border-radius: 50px;
+    padding: 16px 25px 15px 25px;
+    color: #FFFFFF;
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.signbtn:hover{
+    background: #6076c2;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    /*display: none;*/
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translate(-50%,18%);
+    background:#f09494;
+    background-size: 100px 50px,cover;
+    margin: 0;
+    padding: 100px;
+    border-radius: 18px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    align-items:left;
+
+}
+
+.dropdown-c-one{
+    display: grid;
+    grid-template-columns: repeat(1,100px);
+    grid-template-rows: auto;
+    gap: 0.8rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-c-one .dropdown-link{
+    padding: 0.0001rem 0;
+    display: flex;
+}
+
+.dropdown-link .link-label
+.link-title{
+    font-size: 20px;
+    font-weight: 700px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    tex
+}
+
