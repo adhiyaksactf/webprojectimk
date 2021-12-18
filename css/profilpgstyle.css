@@ -403,6 +403,7 @@ textarea::-webkit-input-placeholder{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -451,6 +452,7 @@ textarea::-webkit-input-placeholder{
     filter: blur(20px);
     pointer-events: none;
     user-select: none;
+    cursor: pointer;
 }
 
 .progresslineFaktan1{
