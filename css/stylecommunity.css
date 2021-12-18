@@ -653,6 +653,7 @@ right: -600px;
     position: relative;
     left: 140px;
     border: none;
+    cursor: pointer;
 }
 
 .cancel-btn{
@@ -665,6 +666,7 @@ right: -600px;
     position: relative;
     left: 90px;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -984,20 +986,3 @@ right: -600px;
 #hn3{
     bottom: 207px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
