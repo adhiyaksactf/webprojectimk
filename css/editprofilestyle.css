@@ -235,6 +235,7 @@ textarea{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .groupset{
@@ -262,15 +263,18 @@ textarea{
 
 #upload{
     background: #6076c2;
+    cursor: pointer;
 }
 
 #remove{
     background: #f09494;
+    cursor: pointer;
 }
 
 #cancel{
     background: #EDEF7E;
     color: black;
+    cursor: pointer;
 }
 
 #popup1.active{
@@ -302,6 +306,7 @@ textarea{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 #popup2 h1{
