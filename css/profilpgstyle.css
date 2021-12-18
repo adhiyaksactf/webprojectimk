@@ -418,11 +418,13 @@ textarea::-webkit-input-placeholder{
     box-shadow: inset 0 0 0 0 #f09494;
     transition: ease-out 0.3s;
     outline: none;
+    cursor: pointer;	
 }
 
 #uploader:hover{
     box-shadow: inset 380px 0 0 0 #f09494;
     color: whitesmoke;  
+    cursor: pointer;
 }
 
 
@@ -435,6 +437,7 @@ textarea::-webkit-input-placeholder{
     padding: 10px 115px 10px 115px;
     font-weight: 500;
     font-size: 22px;
+    cursor: pointer;
 }
 
 #popup2.active{
